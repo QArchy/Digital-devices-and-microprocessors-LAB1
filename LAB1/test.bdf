@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 280 216 448 232)
+	(rect 352 176 520 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 20 12)(font "Arial" ))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 280 232 448 248)
+	(rect 352 192 520 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "reset" (rect 5 0 30 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,9 +53,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 656 216 832 232)
+	(rect 744 176 920 192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "out[26..0]" (rect 90 0 137 12)(font "Arial" ))
+	(text "out[30..0]" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -68,9 +68,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 456 192 648 272)
+	(rect 536 152 728 232)
 	(text "counter" (rect 5 0 41 12)(font "Arial" ))
-	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(text "inst8" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -88,8 +88,8 @@ applicable agreement for further details.
 	(port
 		(pt 192 32)
 		(output)
-		(text "divided_clk[26..0]" (rect 0 0 87 12)(font "Arial" ))
-		(text "divided_clk[26..0]" (rect 98 27 185 39)(font "Arial" ))
+		(text "divided_clk[30..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "divided_clk[30..0]" (rect 98 27 185 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
@@ -97,15 +97,15 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 456 224)
-	(pt 448 224)
-)
-(connector
-	(pt 448 240)
-	(pt 456 240)
-)
-(connector
-	(pt 648 224)
-	(pt 656 224)
+	(pt 728 184)
+	(pt 744 184)
 	(bus)
+)
+(connector
+	(pt 520 184)
+	(pt 536 184)
+)
+(connector
+	(pt 520 200)
+	(pt 536 200)
 )

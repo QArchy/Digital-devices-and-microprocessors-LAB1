@@ -1,7 +1,7 @@
 module counter(clk, reset, divided_clk);
 	input clk;
 	input reset;
-	output reg [30:0]divided_clk;
+	output reg [26:0]divided_clk;
 	
 	always @(posedge clk)
 	begin
