@@ -1,4 +1,36 @@
-|counter
+|test
+out[0] <= counter:inst.divided_clk[0]
+out[1] <= counter:inst.divided_clk[1]
+out[2] <= counter:inst.divided_clk[2]
+out[3] <= counter:inst.divided_clk[3]
+out[4] <= counter:inst.divided_clk[4]
+out[5] <= counter:inst.divided_clk[5]
+out[6] <= counter:inst.divided_clk[6]
+out[7] <= counter:inst.divided_clk[7]
+out[8] <= counter:inst.divided_clk[8]
+out[9] <= counter:inst.divided_clk[9]
+out[10] <= counter:inst.divided_clk[10]
+out[11] <= counter:inst.divided_clk[11]
+out[12] <= counter:inst.divided_clk[12]
+out[13] <= counter:inst.divided_clk[13]
+out[14] <= counter:inst.divided_clk[14]
+out[15] <= counter:inst.divided_clk[15]
+out[16] <= counter:inst.divided_clk[16]
+out[17] <= counter:inst.divided_clk[17]
+out[18] <= counter:inst.divided_clk[18]
+out[19] <= counter:inst.divided_clk[19]
+out[20] <= counter:inst.divided_clk[20]
+out[21] <= counter:inst.divided_clk[21]
+out[22] <= counter:inst.divided_clk[22]
+out[23] <= counter:inst.divided_clk[23]
+out[24] <= counter:inst.divided_clk[24]
+out[25] <= counter:inst.divided_clk[25]
+out[26] <= counter:inst.divided_clk[26]
+clk => counter:inst.clk
+reset => counter:inst.reset
+
+
+|test|counter:inst
 clk => divided_clk[0]~reg0.CLK
 clk => divided_clk[1]~reg0.CLK
 clk => divided_clk[2]~reg0.CLK

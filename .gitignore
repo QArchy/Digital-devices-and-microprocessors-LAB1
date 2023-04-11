@@ -2,3 +2,4 @@ output_files/
 incremental_db/
 simulation/
 LAB1/db/LAB1.quiproj.7368.rdr.flock
+LAB1/db/LAB1.quiproj.*.rdr.flock

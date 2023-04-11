@@ -1,4 +1,4 @@
-/* Simulator = Quartus II Simulator */
+/* Simulator = ModelSim */
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -33,57 +33,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("input")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 4;
-	LSB_INDEX = 0;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("input[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "input";
-}
-
-SIGNAL("input[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "input";
-}
-
-SIGNAL("input[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "input";
-}
-
-SIGNAL("input[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "input";
-}
-
-SIGNAL("ones")
+SIGNAL("count")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -93,141 +43,103 @@ SIGNAL("ones")
 	PARENT = "";
 }
 
-SIGNAL("ones[3]")
+SIGNAL("count[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ones";
+	PARENT = "count";
 }
 
-SIGNAL("ones[2]")
+SIGNAL("count[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ones";
+	PARENT = "count";
 }
 
-SIGNAL("ones[1]")
+SIGNAL("count[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ones";
+	PARENT = "count";
 }
 
-SIGNAL("ones[0]")
+SIGNAL("count[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ones";
+	PARENT = "count";
 }
 
-SIGNAL("tens")
+SIGNAL("clk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 4;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
 	PARENT = "";
 }
 
-SIGNAL("tens[3]")
+SIGNAL("dir")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "tens";
+	DIRECTION = INPUT;
+	PARENT = "";
 }
 
-SIGNAL("tens[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "tens";
-}
-
-SIGNAL("tens[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "tens";
-}
-
-SIGNAL("tens[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "tens";
-}
-
-TRANSITION_LIST("input[3]")
+TRANSITION_LIST("count[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 6;
-			LEVEL 0 FOR 80.0;
-			LEVEL 1 FOR 80.0;
-		}
-		LEVEL 0 FOR 40.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("input[2]")
+TRANSITION_LIST("count[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 12;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
-		}
-		LEVEL 0 FOR 40.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("input[1]")
+TRANSITION_LIST("count[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 25;
-			LEVEL 0 FOR 20.0;
-			LEVEL 1 FOR 20.0;
-		}
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("input[0]")
+TRANSITION_LIST("count[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("clk")
 {
 	NODE
 	{
@@ -241,226 +153,89 @@ TRANSITION_LIST("input[0]")
 	}
 }
 
-TRANSITION_LIST("ones[3]")
+TRANSITION_LIST("dir")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ones[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ones[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ones[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("tens[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("tens[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("tens[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("tens[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 1 FOR 160.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 160.0;
+		}
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "input";
+	CHANNEL = "clk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
-	CHILDREN = 1, 2, 3, 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "input[3]";
+	CHANNEL = "dir";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
-	TREE_LEVEL = 1;
-	PARENT = 0;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "input[2]";
+	CHANNEL = "count";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
-	TREE_LEVEL = 1;
-	PARENT = 0;
+	TREE_LEVEL = 0;
+	CHILDREN = 3, 4, 5, 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "input[1]";
+	CHANNEL = "count[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 2;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "input[0]";
+	CHANNEL = "count[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 2;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ones";
+	CHANNEL = "count[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
-	TREE_LEVEL = 0;
-	CHILDREN = 6, 7, 8, 9;
+	TREE_LEVEL = 1;
+	PARENT = 2;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ones[3]";
+	CHANNEL = "count[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
-	PARENT = 5;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ones[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 7;
-	TREE_LEVEL = 1;
-	PARENT = 5;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ones[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 8;
-	TREE_LEVEL = 1;
-	PARENT = 5;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ones[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 9;
-	TREE_LEVEL = 1;
-	PARENT = 5;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "tens";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 10;
-	TREE_LEVEL = 0;
-	CHILDREN = 11, 12, 13, 14;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "tens[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 11;
-	TREE_LEVEL = 1;
-	PARENT = 10;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "tens[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 12;
-	TREE_LEVEL = 1;
-	PARENT = 10;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "tens[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 13;
-	TREE_LEVEL = 1;
-	PARENT = 10;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "tens[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 14;
-	TREE_LEVEL = 1;
-	PARENT = 10;
+	PARENT = 2;
 }
 
 TIME_BAR
