@@ -1,137 +1,84 @@
-|BCD_schema
-a <= a_schema:A_A.y_a
-x0 => a_schema:A_A.x0
-x0 => b_schema:B_B.x0
-x0 => c_schema:C_C.x0
-x0 => d_schema:D_D.x0
-x0 => e_schema:E_E.x0
-x0 => f_schema:F_F.x0
-x0 => g_schema:G_G.x0
-x1 => a_schema:A_A.x1
-x1 => b_schema:B_B.x1
-x1 => c_schema:C_C.x1
-x1 => d_schema:D_D.x1
-x1 => e_schema:E_E.x1
-x1 => f_schema:F_F.x1
-x1 => g_schema:G_G.x1
-x2 => a_schema:A_A.x2
-x2 => b_schema:B_B.x2
-x2 => c_schema:C_C.x2
-x2 => d_schema:D_D.x2
-x2 => e_schema:E_E.x2
-x2 => f_schema:F_F.x2
-x2 => g_schema:G_G.x2
-x3 => a_schema:A_A.x3
-x3 => b_schema:B_B.x3
-x3 => c_schema:C_C.x3
-x3 => d_schema:D_D.x3
-x3 => e_schema:E_E.x3
-x3 => f_schema:F_F.x3
-x3 => g_schema:G_G.x3
-b <= b_schema:B_B.y_b
-c <= c_schema:C_C.y_c
-d <= d_schema:D_D.y_d
-e <= e_schema:E_E.y_e
-f <= f_schema:F_F.y_f
-g <= g_schema:G_G.y_g
-
-
-|BCD_schema|a_schema:A_A
-y_a <= NAND_20.DB_MAX_OUTPUT_PORT_TYPE
-x3 => NAND_1.IN0
-x3 => NAND_1.IN1
-x3 => NAND_15.IN0
-x2 => NAND_2.IN0
-x2 => NAND_2.IN1
-x2 => NAND_7.IN0
-x0 => NAND_5.IN0
-x0 => NAND_5.IN1
-x0 => NAND_7.IN1
-x1 => NAND_6.IN0
-x1 => NAND_6.IN1
-x1 => NAND_4.IN1
-
-
-|BCD_schema|b_schema:B_B
-y_b <= NAND_16.DB_MAX_OUTPUT_PORT_TYPE
-x3 => NAND_2.IN0
-x3 => NAND_2.IN1
-x2 => NAND_3.IN0
-x2 => NAND_3.IN1
-x0 => NAND_98.IN0
-x0 => NAND_98.IN1
-x0 => NAND_5.IN1
-x1 => NAND_10.IN0
-x1 => NAND_10.IN1
-x1 => NAND_5.IN0
-
-
-|BCD_schema|c_schema:C_C
-y_c <= NAND_9.DB_MAX_OUTPUT_PORT_TYPE
-x3 => NAND_1.IN0
-x3 => NAND_1.IN1
-x2 => NAND_3.IN1
-x2 => NAND_5.IN0
-x2 => NAND_5.IN1
-x0 => NAND_4.IN1
-x1 => NAND_2.IN0
-x1 => NAND_2.IN1
-
-
-|BCD_schema|d_schema:D_D
-y_d <= NAND_32.DB_MAX_OUTPUT_PORT_TYPE
-x3 => NAND_12.IN0
-x3 => NAND_12.IN1
-x2 => NAND_26.IN1
-x2 => NAND_15.IN0
-x2 => NAND_15.IN1
-x2 => NAND_21.IN1
-x1 => NAND_99.IN0
-x1 => NAND_14.IN0
-x1 => NAND_14.IN1
-x0 => NAND_99.IN1
-x0 => NAND_10.IN1
-x0 => NAND_13.IN0
-x0 => NAND_13.IN1
-
-
-|BCD_schema|e_schema:E_E
-y_e <= NAND_35.DB_MAX_OUTPUT_PORT_TYPE
-x3 => NAND_38.IN0
-x3 => NAND_38.IN1
-x1 => NAND_33.IN0
-x0 => NAND_37.IN0
-x0 => NAND_37.IN1
-x2 => NAND_39.IN0
-x2 => NAND_39.IN1
-
-
-|BCD_schema|f_schema:F_F
-y_f <= NAND_52.DB_MAX_OUTPUT_PORT_TYPE
-x3 => NAND_45.IN0
-x3 => NAND_45.IN1
-x2 => NAND_46.IN0
-x2 => NAND_46.IN1
-x0 => NAND_37.IN1
-x0 => NAND_39.IN1
-x1 => NAND_38.IN1
-x1 => NAND_39.IN0
-
-
-|BCD_schema|g_schema:G_G
-y_g <= NAND_64.DB_MAX_OUTPUT_PORT_TYPE
-x3 => not_x_three.IN0
-x3 => not_x_three.IN1
-x3 => NAND_45.IN0
-x2 => NAND_48.IN1
-x2 => not_x_two.IN0
-x2 => not_x_two.IN1
-x1 => NAND_47.IN0
-x1 => NAND_45.IN1
-x1 => not_x_one.IN0
-x1 => not_x_one.IN1
-x0 => NAND_47.IN1
-x0 => not_x_zero.IN0
-x0 => not_x_zero.IN1
+|counter
+clk => divided_clk[0]~reg0.CLK
+clk => divided_clk[1]~reg0.CLK
+clk => divided_clk[2]~reg0.CLK
+clk => divided_clk[3]~reg0.CLK
+clk => divided_clk[4]~reg0.CLK
+clk => divided_clk[5]~reg0.CLK
+clk => divided_clk[6]~reg0.CLK
+clk => divided_clk[7]~reg0.CLK
+clk => divided_clk[8]~reg0.CLK
+clk => divided_clk[9]~reg0.CLK
+clk => divided_clk[10]~reg0.CLK
+clk => divided_clk[11]~reg0.CLK
+clk => divided_clk[12]~reg0.CLK
+clk => divided_clk[13]~reg0.CLK
+clk => divided_clk[14]~reg0.CLK
+clk => divided_clk[15]~reg0.CLK
+clk => divided_clk[16]~reg0.CLK
+clk => divided_clk[17]~reg0.CLK
+clk => divided_clk[18]~reg0.CLK
+clk => divided_clk[19]~reg0.CLK
+clk => divided_clk[20]~reg0.CLK
+clk => divided_clk[21]~reg0.CLK
+clk => divided_clk[22]~reg0.CLK
+clk => divided_clk[23]~reg0.CLK
+clk => divided_clk[24]~reg0.CLK
+clk => divided_clk[25]~reg0.CLK
+clk => divided_clk[26]~reg0.CLK
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+reset => divided_clk.OUTPUTSELECT
+divided_clk[0] <= divided_clk[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[1] <= divided_clk[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[2] <= divided_clk[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[3] <= divided_clk[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[4] <= divided_clk[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[5] <= divided_clk[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[6] <= divided_clk[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[7] <= divided_clk[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[8] <= divided_clk[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[9] <= divided_clk[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[10] <= divided_clk[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[11] <= divided_clk[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[12] <= divided_clk[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[13] <= divided_clk[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[14] <= divided_clk[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[15] <= divided_clk[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[16] <= divided_clk[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[17] <= divided_clk[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[18] <= divided_clk[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[19] <= divided_clk[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[20] <= divided_clk[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[21] <= divided_clk[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[22] <= divided_clk[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[23] <= divided_clk[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[24] <= divided_clk[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[25] <= divided_clk[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clk[26] <= divided_clk[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
