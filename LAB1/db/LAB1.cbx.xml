@@ -1,5 +1,17 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="LAB1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|counter15:inst7|lpm_mux0:inst32|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_7rc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|counter74192_99:inst11|lpm_mux0:inst8|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_7rc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|lpm_compareZero:inst25|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_6ri.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|lpm_mux0:inst20|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_7rc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|counter15:inst7|lpm_mux0:inst35|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_7rc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|counter15:inst7|lpm_mux0:inst|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_7rc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|counter74192_99:inst11|lpm_mux0:inst9|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_7rc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|fiveDetector:inst16|lpm_compare5:inst|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_1cj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|lpm_mux0:inst21|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_7rc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|lpm_mux0:inst23|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_7rc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|BUSMUX:inst6|lpm_mux:$00000" CBX_FILE_NAME="mux_arc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB1|lpm_compareZero:inst27|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_6ri.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
