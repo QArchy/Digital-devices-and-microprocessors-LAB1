@@ -582,7 +582,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 464 576 592 672)
+	(rect 464 584 592 680)
 	(text "counter15" (rect 5 0 62 14)(font "Arial" (font_size 8)))
 	(text "inst7" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -1333,24 +1333,6 @@ applicable agreement for further details.
 	(pt 800 648)
 )
 (connector
-	(text "count[3..0]" (rect 594 608 647 620)(font "Arial" ))
-	(pt 640 624)
-	(pt 592 624)
-	(bus)
-)
-(connector
-	(pt 192 624)
-	(pt 464 624)
-)
-(connector
-	(pt 448 640)
-	(pt 464 640)
-)
-(connector
-	(pt 448 656)
-	(pt 448 640)
-)
-(connector
 	(pt 808 568)
 	(pt 480 568)
 )
@@ -1382,20 +1364,6 @@ applicable agreement for further details.
 	(pt 1104 704)
 )
 (connector
-	(pt 192 272)
-	(pt 192 536)
-)
-(connector
-	(pt 640 624)
-	(pt 640 648)
-	(bus)
-)
-(connector
-	(pt 640 648)
-	(pt 640 664)
-	(bus)
-)
-(connector
 	(pt 808 568)
 	(pt 808 648)
 )
@@ -1408,10 +1376,6 @@ applicable agreement for further details.
 	(pt 144 776)
 	(pt 144 792)
 	(bus)
-)
-(connector
-	(pt 192 536)
-	(pt 192 624)
 )
 (connector
 	(pt -144 288)
@@ -1474,10 +1438,6 @@ applicable agreement for further details.
 	(pt 448 616)
 )
 (connector
-	(pt 448 616)
-	(pt 304 616)
-)
-(connector
 	(pt 304 616)
 	(pt 304 704)
 )
@@ -1516,14 +1476,6 @@ applicable agreement for further details.
 (connector
 	(pt 272 392)
 	(pt 272 328)
-)
-(connector
-	(pt 464 608)
-	(pt 424 608)
-)
-(connector
-	(pt 424 608)
-	(pt 424 576)
 )
 (connector
 	(pt 256 392)
@@ -1607,6 +1559,58 @@ applicable agreement for further details.
 	(pt 144 536)
 	(pt 192 536)
 )
+(connector
+	(text "count[3..0]" (rect 594 616 647 628)(font "Arial" ))
+	(pt 640 632)
+	(pt 592 632)
+	(bus)
+)
+(connector
+	(pt 192 632)
+	(pt 464 632)
+)
+(connector
+	(pt 448 648)
+	(pt 464 648)
+)
+(connector
+	(pt 448 656)
+	(pt 448 648)
+)
+(connector
+	(pt 424 576)
+	(pt 424 616)
+)
+(connector
+	(pt 640 632)
+	(pt 640 648)
+	(bus)
+)
+(connector
+	(pt 640 648)
+	(pt 640 664)
+	(bus)
+)
+(connector
+	(pt 192 272)
+	(pt 192 536)
+)
+(connector
+	(pt 192 536)
+	(pt 192 632)
+)
+(connector
+	(pt 448 616)
+	(pt 464 616)
+)
+(connector
+	(pt 304 616)
+	(pt 424 616)
+)
+(connector
+	(pt 424 616)
+	(pt 448 616)
+)
 (junction (pt 144 536))
 (junction (pt 192 536))
 (junction (pt 936 312))
@@ -1627,8 +1631,10 @@ applicable agreement for further details.
 (junction (pt 272 392))
 (junction (pt 216 704))
 (junction (pt 296 392))
+(junction (pt 448 616))
+(junction (pt 424 616))
 (text "0.7 sec" (rect 184 760 226 774)(font "Arial" (font_size 8)))
 (text "50 MHz" (rect -304 400 -262 414)(font "Arial" (font_size 8)))
-(text "put after button" (rect -112 208 -25 222)(font "Arial" (font_size 8)))
+(text "put after button" (rect -112 256 -25 270)(font "Arial" (font_size 8)))
 (text "1.4 sec" (rect 200 608 242 622)(font "Arial" (font_size 8)))
 (text "60 Hz" (rect 184 688 217 702)(font "Arial" (font_size 8)))

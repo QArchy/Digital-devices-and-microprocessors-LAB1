@@ -1,5 +1,10 @@
 |buttonPressIndicatorFront
-pin_name1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
-button => inst.CLK
+pressed <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+button => inst13.IN0
+button => inst8.DATAIN
+button => inst7.IN0
+button => inst6.DATAIN
+clk => inst8.CLK
+clk => inst6.CLK
 
 

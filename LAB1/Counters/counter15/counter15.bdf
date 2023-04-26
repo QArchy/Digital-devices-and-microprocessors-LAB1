@@ -70,7 +70,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1840 408 2016 424)
+	(rect 1656 408 1832 424)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "count[3..0]" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
@@ -706,77 +706,8 @@ applicable agreement for further details.
 	(pt 1240 456)
 )
 (connector
-	(pt 1760 368)
-	(pt 1760 416)
-)
-(connector
-	(pt 1744 392)
-	(pt 1744 416)
-)
-(connector
-	(pt 1792 320)
-	(pt 1792 416)
-)
-(connector
-	(pt 1776 344)
-	(pt 1776 416)
-)
-(connector
-	(text "out[0]" (rect 1706 304 1734 316)(font "Arial" ))
-	(pt 480 320)
-	(pt 1792 320)
-)
-(connector
-	(text "out[1]" (rect 1706 328 1734 340)(font "Arial" ))
-	(pt 808 344)
-	(pt 1776 344)
-)
-(connector
-	(text "out[2]" (rect 1706 352 1734 364)(font "Arial" ))
-	(pt 1168 368)
-	(pt 1760 368)
-)
-(connector
-	(pt 480 320)
-	(pt 480 456)
-)
-(connector
-	(pt 480 456)
-	(pt 480 496)
-)
-(connector
 	(pt 808 456)
 	(pt 808 496)
-)
-(connector
-	(pt 1168 368)
-	(pt 1168 456)
-)
-(connector
-	(pt 1728 416)
-	(pt 1744 416)
-	(bus)
-)
-(connector
-	(pt 1744 416)
-	(pt 1760 416)
-	(bus)
-)
-(connector
-	(pt 1760 416)
-	(pt 1776 416)
-	(bus)
-)
-(connector
-	(pt 1776 416)
-	(pt 1792 416)
-	(bus)
-)
-(connector
-	(text "out[3..0]" (rect 1802 400 1843 412)(font "Arial" ))
-	(pt 1792 416)
-	(pt 1840 416)
-	(bus)
 )
 (connector
 	(pt 648 448)
@@ -791,21 +722,8 @@ applicable agreement for further details.
 	(pt 1528 456)
 )
 (connector
-	(text "out[3]" (rect 1706 376 1734 388)(font "Arial" ))
-	(pt 1744 392)
-	(pt 1528 392)
-)
-(connector
 	(pt 808 408)
 	(pt 648 408)
-)
-(connector
-	(pt 808 344)
-	(pt 808 408)
-)
-(connector
-	(pt 808 408)
-	(pt 808 456)
 )
 (connector
 	(pt 408 472)
@@ -972,20 +890,8 @@ applicable agreement for further details.
 	(pt 1280 568)
 )
 (connector
-	(pt 1168 456)
-	(pt 1168 496)
-)
-(connector
 	(pt 1168 496)
 	(pt 1168 640)
-)
-(connector
-	(pt 1528 392)
-	(pt 1528 456)
-)
-(connector
-	(pt 1528 456)
-	(pt 1528 712)
 )
 (connector
 	(pt 1488 512)
@@ -1031,16 +937,106 @@ applicable agreement for further details.
 	(pt 728 544)
 	(pt 1088 544)
 )
+(connector
+	(pt 1576 368)
+	(pt 1576 416)
+)
+(connector
+	(pt 1560 392)
+	(pt 1560 416)
+)
+(connector
+	(pt 1608 320)
+	(pt 1608 416)
+)
+(connector
+	(pt 1592 344)
+	(pt 1592 416)
+)
+(connector
+	(text "out[0]" (rect 1522 304 1550 316)(font "Arial" ))
+	(pt 480 320)
+	(pt 1608 320)
+)
+(connector
+	(text "out[1]" (rect 1522 328 1550 340)(font "Arial" ))
+	(pt 808 344)
+	(pt 1592 344)
+)
+(connector
+	(text "out[2]" (rect 1522 352 1550 364)(font "Arial" ))
+	(pt 1168 368)
+	(pt 1576 368)
+)
+(connector
+	(text "out[3]" (rect 1522 376 1550 388)(font "Arial" ))
+	(pt 1528 392)
+	(pt 1560 392)
+)
+(connector
+	(pt 480 320)
+	(pt 480 456)
+)
+(connector
+	(pt 480 456)
+	(pt 480 496)
+)
+(connector
+	(pt 1168 368)
+	(pt 1168 456)
+)
+(connector
+	(pt 1168 456)
+	(pt 1168 496)
+)
+(connector
+	(pt 1544 416)
+	(pt 1560 416)
+	(bus)
+)
+(connector
+	(pt 1560 416)
+	(pt 1576 416)
+	(bus)
+)
+(connector
+	(pt 1576 416)
+	(pt 1592 416)
+	(bus)
+)
+(connector
+	(pt 1592 416)
+	(pt 1608 416)
+	(bus)
+)
+(connector
+	(text "out[3..0]" (rect 1618 400 1659 412)(font "Arial" ))
+	(pt 1608 416)
+	(pt 1656 416)
+	(bus)
+)
+(connector
+	(pt 808 344)
+	(pt 808 408)
+)
+(connector
+	(pt 808 408)
+	(pt 808 456)
+)
+(connector
+	(pt 1528 392)
+	(pt 1528 456)
+)
+(connector
+	(pt 1528 456)
+	(pt 1528 712)
+)
 (junction (pt 480 456))
 (junction (pt 544 472))
 (junction (pt 640 464))
 (junction (pt 808 456))
 (junction (pt 1168 456))
 (junction (pt 1528 456))
-(junction (pt 1744 416))
-(junction (pt 1760 416))
-(junction (pt 1776 416))
-(junction (pt 1792 416))
 (junction (pt 808 408))
 (junction (pt 1168 496))
 (junction (pt 400 544))
@@ -1053,5 +1049,9 @@ applicable agreement for further details.
 (junction (pt 1128 520))
 (junction (pt 768 520))
 (junction (pt 440 520))
+(junction (pt 1560 416))
+(junction (pt 1576 416))
+(junction (pt 1592 416))
+(junction (pt 1608 416))
 (text "dir=0 => substr" (rect 392 552 478 566)(font "Arial" (font_size 8)))
 (text "en=0 => disabled" (rect 408 528 504 542)(font "Arial" (font_size 8)))
